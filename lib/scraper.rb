@@ -42,6 +42,7 @@ doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scrapin
      end
    end
   end
+  Scraper.new.print_courses
   
 
 
