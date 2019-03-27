@@ -30,6 +30,7 @@ doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scrapin
     course.schedule = post.css(".date").text
     course.description = post.css("p").text
   end
+end 
   
 
    def print_courses
@@ -42,7 +43,7 @@ doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scrapin
      end
    end
  end 
-  
+end
   Scraper.new.print_courses
   
 
