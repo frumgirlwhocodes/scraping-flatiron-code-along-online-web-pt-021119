@@ -27,10 +27,11 @@ doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scrapin
       course.description = post.css("p").text
     end
   end
-    binding.pry  
+    binding.pry   
   
  
 end
+Scraper.new.get_page
  
 
 
